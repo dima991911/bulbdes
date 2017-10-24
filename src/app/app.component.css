@@ -1,0 +1,47 @@
+﻿.header {
+  margin-top: 40px;
+}
+
+.mobile_navbar {
+  display: none;
+}
+
+.brand {
+  text-align: right;
+}
+
+.logo {
+  margin-top: 30px;
+  text-align: right;
+  width: 90%;
+}
+
+@media screen and (max-width: 767px) {
+ .header {
+   margin-top: 75px;
+ }
+
+ .navbar {
+    display: none;
+  }
+ .mobile_navbar {
+   display: block;
+ }
+
+ .logo {
+   width: 100px;
+ }
+
+ .brand {
+   position: fixed;
+   right: 40px;
+   top: -11px;
+   z-index: 100;
+ }
+}
+
+@media screen and (max-width: 480px) {
+  .brand {
+    right: 65px;
+  }
+}

@@ -1,0 +1,63 @@
+﻿header {
+  top: 0;
+  height: 55px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.router_active {
+  color: #444;
+  text-decoration: none;
+}
+
+.burger {
+  cursor: pointer;
+  background: rgba(4,4,4, 0.9);
+  padding: 10px 10px;
+  border-bottom: 1px solid #444;
+}
+
+.hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: #d4d4d4;
+  margin: 6px 0;
+}
+
+.nav {
+  width: 100%;
+}
+
+a {
+  display: none;
+}
+
+.a_block {
+  display: block;
+  width: 100%;
+  font-size: 26px;
+  z-index: 0;
+  background: rgba(4,4,4, 0.9);
+  padding: 10px 10px;
+  border-bottom: 1px solid #444;
+  color: #d4d4d4;
+  font-weight: bold;
+  animation: menuAnimation 0.3s ease-out forwards;
+}
+
+  a:hover {
+    color: #5e5e5e;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  @keyframes menuAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+    }
+  }

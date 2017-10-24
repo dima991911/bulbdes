@@ -1,0 +1,99 @@
+﻿.price {
+  padding: 0 60px;
+  color: #d4d4d4;
+  animation: animationShow 0.3s ease-out forwards;
+}
+
+a {
+  color: #d4d4d4;
+  transition: 0.5s;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: white;
+}
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 30px;
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+
+h4 {
+  border-bottom: 1px solid #5e5e5e;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+.from {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.prices {
+  border-bottom: 1px solid #5e5e5e;
+}
+
+.price_list {
+  text-align: left;
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.steps {
+  margin: 20px 0;
+}
+
+.slogan_bold {
+  font-weight: bold;
+}
+
+.discount {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: #5e5e5e;
+}
+
+@keyframes animationShow {
+  0% {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .price {
+    padding: 0;
+  }
+}

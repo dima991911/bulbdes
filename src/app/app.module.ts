@@ -1,16 +1,48 @@
-import { BrowserModule } from '@angular/platform-browser';
+﻿import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { ReactiveFormsModule } from '@angular/forms';
+import { router } from './router';
 
+import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarMobileComponent } from './navbar.mobile/navbar.mobile.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { PriceComponent } from './price/price.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 import { AppComponent } from './app.component';
 
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { DrawMarketComponent } from './projects/draw-market/drawmarket.component';
+
+import { EmailService } from './service/email.service';
+
 @NgModule({
-  declarations: [
-    AppComponent
+    declarations: [
+        NavbarComponent,
+        NavbarMobileComponent,
+        HomeComponent,  
+        PortfolioComponent,
+        AboutComponent,
+        PriceComponent,
+        ContactComponent,
+        FooterComponent,
+        DrawMarketComponent,
+        AppComponent
   ],
-  imports: [
-    BrowserModule
+    imports: [
+        RouterModule.forRoot(router),
+        BrowserModule,
+        ReactiveFormsModule,
+        HttpModule,
+        BrowserAnimationsModule
   ],
-  providers: [],
+    providers: [
+        EmailService
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

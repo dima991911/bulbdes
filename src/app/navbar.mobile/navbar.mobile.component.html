@@ -1,0 +1,14 @@
+﻿<header>
+  <div class="burger" (click)="getMenu()">
+    <div class="hamburger"></div>
+    <div class="hamburger"></div>
+    <div class="hamburger"></div>
+  </div>
+
+  <nav class="nav">
+    <a routerLink="/portfolio" routerLinkActive="router_active" [ngClass]="{a_block: menuHidden}" (click)="getMenu()">Portfolio</a>
+    <a routerLink="/about" routerLinkActive="router_active" [ngClass]="{a_block: menuHidden}" (click)="getMenu()">About</a>
+    <a routerLink="/price" routerLinkActive="router_active" [ngClass]="{a_block: menuHidden}" (click)="getMenu()">Services</a>
+    <a routerLink="/contact" routerLinkActive="router_active" [ngClass]="{a_block: menuHidden}" (click)="getMenu()">Contact</a>
+  </nav>
+</header>

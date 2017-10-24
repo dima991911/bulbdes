@@ -1,0 +1,33 @@
+﻿<div class="row">
+  <div class="container footer">
+
+    <div class="col-lg-4 col-md-6 col-sm-12 footer_emails">
+      <h3>Email:</h3>
+      <a class="contact" href="mailto:info@bulbdes.com">info@bulbdes.com</a>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12 social">
+      <a href="https://fb.com/bulbdes" target="_blank" class="social_icon"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/bulbdes" target="_blank" class="social_icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://behance.net/bulbdes" target="_blank" class="social_icon"><i class="fa fa-behance-square" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/bulbdes" target="_blank" class="social_icon"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="col-lg-4 col-md-12 col-sm-12 footer_contact">
+      <h3>Contact us</h3>
+
+      <form [formGroup]="emailForm" (ngSubmit)="onSubmit(emailForm.value)">
+        <input
+               type="email"
+               class="email"
+               formControlName="email"
+               autocomplete="off"
+               placeholder="Your email" />
+
+        <button class="submit"  [disabled]="emailForm.invalid">Submit</button>
+      </form>
+
+    </div>
+
+  </div>
+</div>

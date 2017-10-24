@@ -1,0 +1,103 @@
+﻿.content {
+  padding: 10px 50px;
+  animation: animationShow 0.3s ease-in forwards;
+}
+
+header {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  transition: 1s;
+  color: #d4d4d4;
+}
+
+h3 {
+  font-size: 30px;
+  color: #d4d4d4;
+  margin-top: 0;
+}
+
+h4 {
+  text-align: left;
+  font-size: 26px;
+  color: #d4d4d4;
+  cursor: pointer;
+}
+
+h5 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+ul {
+  margin-top: 25px;
+  color: #d4d4d4;
+}
+
+li {
+  display: block;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: underline;
+  color: #d4d4d4;
+  font-style: italic;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: white
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  cursor: pointer;
+  color: #d4d4d4;
+}
+
+.preference  {
+  margin: 20px 0;
+}
+
+.onePreference {
+  margin-bottom: 10px;
+  border-left: 1px solid #d4d4d4;
+  color: #d4d4d4;
+}
+
+.onePreferenceParagraph {
+  animation: onePreferenceP 0.3s ease-out forwards;
+  text-align: left;
+}
+
+@keyframes onePreferenceP {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animationShow {
+  0% {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

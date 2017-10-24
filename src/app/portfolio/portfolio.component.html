@@ -1,0 +1,9 @@
+﻿<div class="row">
+  <div 
+       *ngFor="let project of projects"
+       class="col-md-6 col-sm-6 col-xs-6 col-lg-4 project"
+       (click)="selectProject(project.url)">
+    <img src="{{ project.avatar }}" class="project_img"/>
+
+  </div>
+</div>

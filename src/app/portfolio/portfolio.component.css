@@ -1,0 +1,40 @@
+﻿h1 {
+  text-align: left;
+  margin-top: 0;
+  color: white;
+}
+
+.project_img {
+  max-width: 100%;
+  filter: grayscale(100%);
+  transition: 0.5s;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+}
+
+  .project_img:hover {
+    filter: unset;
+    transform: scale(1.01, 1.01);
+    transition: 0.3s;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 30px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: 2px 2px 30px 0px rgba(0,0,0,0.8);
+    box-shadow: 2px 2px 30px 0px rgba(0,0,0,0.8);
+  }
+
+.project {
+  margin-bottom: 25px;
+  animation: myAnimation 0.5s ease-out forwards;
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+  100% {
+    opacity: 1;
+  }
+}

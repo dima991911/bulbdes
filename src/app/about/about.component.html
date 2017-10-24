@@ -1,0 +1,81 @@
+﻿<div class="about col-md-12 col-lg-12 col-sm-12 col-xs-12">
+    <h3><span class="brand">Bulb design</span> is a Logo Design Studio and Branding Agency.</h3>
+
+    <p>We are team of Ukrainians designers based in Girona, Spain. We are professionals who love and know their business.</p>
+
+    <h3>We specialize in:</h3>
+    <div class="row">
+
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <p><b>Logo design</b></p>
+        <ul>
+          <li>Logo development</li>
+          <li>Brand identity</li>
+          <li>Icon design</li>
+          <li>Graphic design</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <p><b>Print design</b></p>
+        <ul>
+          <li>Business cards</li>
+          <li>Flyers</li>
+          <li>Posters</li>
+          <li>Brochures</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slider">
+
+      <h4>Why we?</h4>
+      <div [ngSwitch]="index" class="slide">
+        <h5 *ngSwitchCase="0">{{ slideArray[index] }}</h5>
+        <h5 *ngSwitchCase="1">{{ slideArray[index] }}</h5>
+        <h5 *ngSwitchCase="2">{{ slideArray[index] }}</h5>
+        <h5 *ngSwitchCase="3">{{ slideArray[index] }}</h5>
+        <h5 *ngSwitchCase="4">{{ slideArray[index] }}</h5>
+      </div>
+      <div class="circle_align">
+       <div class="circle_margin" (click)="slide(0);">
+        <div (click)="slide(0);"
+             class="circle"
+             [class.circle_selected]="index == 0"></div>
+        </div>
+
+        <div class="circle_margin" (click)="slide(1);">
+          <div (click)="slide(1)"
+               class="circle"
+               [class.circle_selected]="index == 1"></div>
+          </div>
+
+        <div class="circle_margin" (click)="slide(2);">
+          <div (click)="slide(2)"
+               class="circle"
+               [class.circle_selected]="index == 2"></div>
+        </div>
+
+        <div class="circle_margin" (click)="slide(3);">
+          <div (click)="slide(3)"
+               class="circle"
+               [class.circle_selected]="index == 3"></div>
+        </div>
+        <div class="circle_margin" (click)="slide(4);">
+          <div (click)="slide(4)"
+               class="circle"
+               [class.circle_selected]="index == 4"></div>
+        </div>
+
+        </div>
+    </div>
+
+    <h3>Make your corporate identity!</h3>
+
+    <p class="content">If you need a professional logo design or brand identity, please check our <a routerLink="/portfolio">design portfolio</a> and get in touch with us if you like our style. Our main goal is satisfy your needs.</p>
+    
+    <home></home>
+
+    <p>We described all the steps very briefly so as not to waste your time.
+If you have any questions about the logo design process, please <a routerLink="/contact">contact us.</a></p>
+    <p>We hope for long-term and productive cooperation!</p>
+</div>

@@ -1,0 +1,76 @@
+﻿<div class="contact">
+  <div class="row">
+    <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 contactForm">
+      <h3>Contact Us</h3>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+        <label>Name</label>
+        <input 
+               formControlName="name"
+               type="text"
+               placeholder="Your name"/>
+
+        <label>Email *</label>
+        <input 
+               formControlName="email"
+               type="email"
+               autocomplete="off"
+               placeholder="Your email"
+               name="email"/>
+
+        <p 
+           class="error"
+           *ngIf="loginForm.get('email').hasError('email') &&
+                  loginForm.get('email').touched">Incorrect email</p>
+
+        <label>Subject</label>
+
+        <input 
+               formControlName="subject"
+               type="text"
+               placeholder="Subject"/>
+
+        <label>Message *</label>
+
+        <textarea
+               formControlName="msg"
+               placeholder="Text message"
+               class="msg"
+               type="text"></textarea>
+
+        <p 
+           class="error"
+           *ngIf="loginForm.get('msg').hasError('required') &&
+                  loginForm.get('msg').touched">Message is empty</p>
+
+        <button type="submit" class="sub" [disabled]="loginForm.invalid">Submit</button>
+
+        <p class="thank" *ngIf="msgThank">Thanks for you message</p>
+      </form>
+    </div>
+
+    <div class="col-lg-6  col-md-4 col-sm-12 col-xs-12">
+      <div class="block">
+        <h3>Hire us</h3>
+        <a href="https://www.freelancer.com/hireme/skochkovadym" target="_blank" class="work">Freelancer.com</a>
+        <a href="https://www.upwork.com/o/profiles/users/_~015adac7bb62ef58a2/" target="_blank" class="work">Upwork</a>
+      </div>
+
+      <div class="block">
+        <h3>Write to us</h3>
+        <a href="mailto:info@bulbdes.com">info@bulbdes.com</a>
+        <a href="mailto:dimon4uk.ds@gmail.com">dimon4uk.ds@gmail.com</a>
+        <a href="mailto:skochkovadym@gmail.com">skochkovadym@gmail.com</a>
+      </div>
+      
+      <div class="block">
+        <h3>Follow us</h3>
+        <a href="https://fb.com/bulbdes" target="_blank" class="social_icon"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="https://instagram.com/bulbdes" target="_blank" class="social_icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://behance.net/bulbdes" target="_blank" class="social_icon"><i class="fa fa-behance-square" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/bulbdes" target="_blank" class="social_icon"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<footer></footer>
