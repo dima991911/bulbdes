@@ -1,4 +1,6 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
+
+import { projects } from '../../projects';
 
 @Component({
   moduleId: module.id,
@@ -7,6 +9,14 @@
   styleUrls: ['drawmarket.component.css']
 })
 
-export class DrawMarketComponent {
+export class DrawMarketComponent implements OnInit {
+    project: any;
 
+    ngOnInit() {
+        projects.forEach((elem) => {
+            if (elem.id == 1) {
+                this.project = elem; 
+            }
+        });
+    }
 }

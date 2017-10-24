@@ -3,6 +3,13 @@
       id: 1,
       type: 'logo',
       name: "Draw Market",
+      title: "Logo design and Branding",
+      presentation: {
+          top: 'assets/projects/logo_drawmarket/top.jpg',
+          drawing: 'assets/projects/logo_drawmarket/drawing.jpg',
+          logo: 'assets/projects/logo_drawmarket/d_draw.jpg',
+          brand: 'assets/projects/logo_drawmarket/brand_identity.png'
+      },
       url: "draw-market",
       avatar: "assets/projects/logo_drawmarket/avatar.jpg"
   },
