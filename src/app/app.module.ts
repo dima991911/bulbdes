@@ -9,6 +9,7 @@ import { router } from './router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarMobileComponent } from './navbar.mobile/navbar.mobile.component';
 import { HomeComponent } from './home/home.component';
+import { WorksComponent } from './works/works.component';
 import { AboutComponent } from './about/about.component';
 import { PriceComponent } from './price/price.component';
 import { ContactComponent } from './contact/contact.component';
@@ -25,6 +26,7 @@ import { EmailService } from './service/email.service';
         NavbarComponent,
         NavbarMobileComponent,
         HomeComponent,  
+        WorksComponent,
         PortfolioComponent,
         AboutComponent,
         PriceComponent,

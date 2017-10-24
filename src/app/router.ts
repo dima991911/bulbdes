@@ -1,5 +1,6 @@
 ﻿import { Routes, RouterModule } from '@angular/router';
 
+import { WorksComponent } from './works/works.component';
 import { AboutComponent } from './about/about.component';
 import { PriceComponent } from './price/price.component';
 import { ContactComponent } from './contact/contact.component';
@@ -9,8 +10,23 @@ import { DrawMarketComponent } from './projects/draw-market/drawmarket.component
 
 export const router: Routes = [
     {
-        path: 'portfolio',
-        component: PortfolioComponent
+        path: 'works',
+        component: WorksComponent,
+        children: [
+            {
+                path: 'portfolio',
+                component: PortfolioComponent
+            },
+            {
+                path: 'draw-market',
+                component: DrawMarketComponent
+            },
+            {
+                path: '',
+                redirectTo: 'portfolio',
+                pathMatch: 'full'
+            }
+        ]
     },
     {
         path: 'about',
@@ -26,7 +42,7 @@ export const router: Routes = [
     },
     {
         path: '',
-        redirectTo: 'portfolio',
+        redirectTo: 'works',
         pathMatch: 'full'
     }
 ];

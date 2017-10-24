@@ -22,7 +22,9 @@ export class PortfolioComponent implements OnInit {
     }
 
     selectProject(id) {
-        var url = "/" + id;
-        this.router.navigate([url]);
+        if (id) {
+            this.router.navigate(['works', id]);
+        }
+        
     }
 }
