@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { DrawMarketComponent } from './projects/draw-market/drawmarket.component';
+import { AnextyComponent } from './projects/anexty/anexty.component';
 
 export const router: Routes = [
     {
@@ -20,6 +21,10 @@ export const router: Routes = [
             {
                 path: 'draw-market',
                 component: DrawMarketComponent
+            },
+            {
+                path: 'anexty',
+                component: AnextyComponent
             },
             {
                 path: '',

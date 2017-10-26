@@ -3,10 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\navbar.mobile",
+    "\\src\\app\\projects",
     "\\src\\app\\projects\\draw-market",
+    "\\src\\app\\service",
     "\\src\\assets",
     "\\src\\assets\\email"
   ],
-  "SelectedNode": "\\src\\app\\portfolio",
+  "SelectedNode": "\\src\\app\\navbar.mobile\\navbar.mobile.component.html",
   "PreviewInSolutionExplorer": false
 }

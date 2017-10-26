@@ -18,6 +18,7 @@ import { AppComponent } from './app.component';
 
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { DrawMarketComponent } from './projects/draw-market/drawmarket.component';
+import { AnextyComponent } from './projects/anexty/anexty.component';
 
 import { EmailService } from './service/email.service';
 
@@ -33,6 +34,7 @@ import { EmailService } from './service/email.service';
         ContactComponent,
         FooterComponent,
         DrawMarketComponent,
+        AnextyComponent,
         AppComponent
   ],
     imports: [

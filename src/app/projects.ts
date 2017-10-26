@@ -2,8 +2,8 @@
   {
       id: 1,
       type: 'logo',
-      name: "Draw Market",
-      title: "Logo design and Branding",
+      name: 'Draw Market',
+      title: 'Logo design and Branding',
       presentation: {
           top: 'assets/projects/logo_drawmarket/top.jpg',
           drawing: 'assets/projects/logo_drawmarket/drawing.jpg',
@@ -16,7 +16,15 @@
   {
       id: 2,
       type: 'logo',
-      name: "Anexty",
+      name: 'Anexty',
+      title: 'Logo design and Branding',
+      presentation: {
+          top: 'assets/projects/logo_anexty/top.jpg',
+          people: 'assets/projects/logo_anexty/people_bg.jpg',
+          bilboard: 'assets/projects/logo_anexty/bilboard.jpg',
+          idea: 'assets/projects/logo_anexty/idea.png'
+      },
+      url: "anexty",
       avatar: "assets/projects/logo_anexty/avatar.jpg"
   },
   {
