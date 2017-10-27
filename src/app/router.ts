@@ -12,13 +12,13 @@ import { BeardStyleComponent } from './projects/beard-style/beard.style.componen
 
 export const router: Routes = [
     {
+        path: 'portfolio',
+        component: PortfolioComponent,
+    },
+    {
         path: 'works',
         component: WorksComponent,
         children: [
-            {
-                path: 'portfolio',
-                component: PortfolioComponent
-            },
             {
                 path: 'draw-market',
                 component: DrawMarketComponent
@@ -31,11 +31,6 @@ export const router: Routes = [
                 path: 'beard-style',
                 component: BeardStyleComponent
             },
-            {
-                path: '',
-                redirectTo: 'portfolio',
-                pathMatch: 'full'
-            }
         ]
     },
     {
@@ -52,7 +47,7 @@ export const router: Routes = [
     },
     {
         path: '',
-        redirectTo: 'works',
+        redirectTo: 'portfolio',
         pathMatch: 'full'
     }
 ];
