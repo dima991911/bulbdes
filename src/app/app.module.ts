@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ReactiveFormsModule } from '@angular/forms';
+import { ScrollToModule } from 'ng2-scroll-to';
+
 import { router } from './router';
 
 import { NavbarComponent } from './navbar/navbar.component';
@@ -19,6 +21,7 @@ import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { DrawMarketComponent } from './projects/draw-market/drawmarket.component';
 import { AnextyComponent } from './projects/anexty/anexty.component';
+import { BeardStyleComponent } from './projects/beard-style/beard.style.component';
 
 import { EmailService } from './service/email.service';
 
@@ -35,6 +38,7 @@ import { EmailService } from './service/email.service';
         FooterComponent,
         DrawMarketComponent,
         AnextyComponent,
+        BeardStyleComponent,
         AppComponent
   ],
     imports: [
@@ -42,6 +46,7 @@ import { EmailService } from './service/email.service';
         BrowserModule,
         ReactiveFormsModule,
         HttpModule,
+        ScrollToModule.forRoot(),
         BrowserAnimationsModule
   ],
     providers: [

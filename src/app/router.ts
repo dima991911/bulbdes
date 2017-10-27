@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { DrawMarketComponent } from './projects/draw-market/drawmarket.component';
 import { AnextyComponent } from './projects/anexty/anexty.component';
+import { BeardStyleComponent } from './projects/beard-style/beard.style.component';
 
 export const router: Routes = [
     {
@@ -25,6 +26,10 @@ export const router: Routes = [
             {
                 path: 'anexty',
                 component: AnextyComponent
+            },
+            {
+                path: 'beard-style',
+                component: BeardStyleComponent
             },
             {
                 path: '',

@@ -16,8 +16,26 @@
   width: 90%;
 }
 
-@media screen and (max-width: 767px) {
- .header {
+.scrollTop {
+  width: 20px;
+  height: 20px;
+  color: white;
+  position: fixed;
+  bottom: 3%;
+  left: 3%;
+  border: solid #d4d4d4;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  cursor: pointer;
+  z-index: 110;
+  transition: 1s;
+  animation: showArrow 1s ease-out forwards;
+}
+  
+  @media screen and (max-width: 767px) {
+    .header {
    margin-top: 75px;
  }
 
@@ -38,6 +56,16 @@
    top: -11px;
    z-index: 100;
  }
+}
+
+@keyframes showArrow {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 480px) {

@@ -30,7 +30,14 @@
   {
       id: 3,
       type: 'logo',
-      name: "Beerd Style",
+      name: "Beard Style",
+      title: 'Logo design and Branding',
+      presentation: {
+          top: 'assets/projects/logo_beerdstyle/top.jpg',
+          stamp: 'assets/projects/logo_beerdstyle/stamp.jpg',
+          beard: 'assets/projects/logo_beerdstyle/beard.jpg'
+      },
+      url: 'beard-style',
       avatar: "assets/projects/logo_beerdstyle/avatar.jpg"
   },
   {
