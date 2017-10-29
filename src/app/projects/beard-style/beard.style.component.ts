@@ -3,10 +3,9 @@
 import { projects } from '../../projects';
 
 @Component({
-    moduleId: module.id,
     selector: 'beard-style',
-    templateUrl: 'beard.style.component.html',
-    styleUrls: ['beard.style.component.css']
+    templateUrl: './beard.style.component.html',
+    styleUrls: ['./beard.style.component.css', '../project.css']
 })
 
 export class BeardStyleComponent implements OnInit {

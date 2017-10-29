@@ -44,6 +44,13 @@
       id: 32,
       type: 'logo',
       name: 'Sim Golf',
+      title: 'Logo design and Branding',
+      presentation: {
+          top: "assets/projects/logo_sim-golf/top.jpg",
+          golfer: "assets/projects/logo_sim-golf/golfer.jpg",
+          color: "assets/projects/logo_sim-golf/color.jpg"
+      },
+      url: 'sim-golf',
       avatar: 'assets/projects/logo_sim-golf/avatar.jpg'
   },
   {

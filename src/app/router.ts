@@ -9,6 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { DrawMarketComponent } from './projects/draw-market/drawmarket.component';
 import { AnextyComponent } from './projects/anexty/anexty.component';
 import { BeardStyleComponent } from './projects/beard-style/beard.style.component';
+import { SimGolfComponent } from './projects/sim-golf/sim.golf.component';
 
 export const router: Routes = [
     {
@@ -31,6 +32,10 @@ export const router: Routes = [
                 path: 'beard-style',
                 component: BeardStyleComponent
             },
+            {
+                path: 'sim-golf',
+                component: SimGolfComponent
+            }
         ]
     },
     {

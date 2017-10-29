@@ -3,10 +3,9 @@
 import { projects } from '../../projects';
 
 @Component({
-  moduleId: module.id,
   selector: 'anexty',
-  templateUrl: 'anexty.component.html',
-  styleUrls: ['anexty.component.css']
+  templateUrl: './anexty.component.html',
+  styleUrls: ['./anexty.component.css', '../project.css']
 })
 
 export class AnextyComponent {

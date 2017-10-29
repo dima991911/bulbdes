@@ -1,0 +1,75 @@
+﻿.project {
+  color: #d4d4d4;
+  animation: animationShow 0.3s ease-out forwards;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  transition: 0.5s;
+  -webkit-box-shadow: 5px -5px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px -5px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px -5px 15px 0px rgba(0,0,0,0.75);
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h4 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.logo_data {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #444;
+  margin-bottom: 30px;
+}
+
+.top {
+  margin-bottom: 50px;
+}
+
+.discription {
+  padding-right: 100px;
+  line-height: 25px;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.quotes {
+  vertical-align: middle;
+  font-size: 50px;
+  line-height: 0;
+}
+
+.response {
+  margin-top: 50px;
+  border-top: 1px solid #444;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+@keyframes animationShow {
+  0% {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
