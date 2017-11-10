@@ -1,0 +1,39 @@
+﻿<div class="project">
+
+  <header class="logo_data">
+    <h1>{{ project.name }}</h1>
+    <h3>{{ project.title }}</h3>
+  </header>
+
+  <div class="top">
+    <img src="{{ project.presentation.top }}" />
+  </div>
+
+  <div class="row">
+
+    <!--<div class="col-lg-6 discription">
+      <h4>
+        Objective:
+      </h4>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>-->
+
+    <div class="col-lg-6">
+      <img src="{{ project.presentation.igp }}" />
+    </div>
+
+  </div>
+
+  <div class="laptop">
+    <img src="{{ project.presentation.laptop }}" />
+  </div>
+
+  <div class="response">
+    <p>
+      <span class="quotes">"</span>
+      {{ project.feedback }}
+    </p>
+  </div> 
+</div>

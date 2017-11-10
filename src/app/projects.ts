@@ -4,6 +4,7 @@
       type: 'logo',
       name: 'Draw Market',
       title: 'Logo design and Branding',
+      feedback: "Vadym is a great creative designer who's lengthy experience shines through in every project. His work is very professional and definitely the best we could wish for.",
       presentation: {
           top: 'assets/projects/logo_drawmarket/top.jpg',
           drawing: 'assets/projects/logo_drawmarket/drawing.jpg',
@@ -18,6 +19,7 @@
       type: 'logo',
       name: 'Anexty',
       title: 'Logo design and Branding',
+      feedback: "Vadym is an intelligent, professional and skillful individual. He communicated brilliantly, asking all the right questions so he knew exactly what i wanted. He also gave some great constructive feedback which made the final product better than i could have imagined.",
       presentation: {
           top: 'assets/projects/logo_anexty/top.jpg',
           people: 'assets/projects/logo_anexty/people_bg.jpg',
@@ -32,6 +34,7 @@
       type: 'logo',
       name: "Beard Style",
       title: 'Logo design and Branding',
+      feedback: "My experience with Vadym was very positive. She was timely and very cooperative with changes to the document she helped create. She was pleasant and communicated regularly throughout the project. She also completed the job on a very short timeline and on schedule....which was a tremendous help.",
       presentation: {
           top: 'assets/projects/logo_beerdstyle/top.jpg',
           stamp: 'assets/projects/logo_beerdstyle/stamp.jpg',
@@ -45,6 +48,7 @@
       type: 'logo',
       name: 'Sim Golf',
       title: 'Logo design and Branding',
+      feedback: "Logo design completed and I am extremely happy with the results. Responses and revisions were very fast. I had a vision in mind and he did an excellent job of translating my textual description into a beautifully designed logo.I will definitely hire him again and recommend him to others.",
       presentation: {
           top: "assets/projects/logo_sim-golf/top.jpg",
           golfer: "assets/projects/logo_sim-golf/golfer.jpg",
@@ -63,6 +67,14 @@
       id: 33,
       type: 'logo',
       name: 'Instant Global Payments',
+      title: 'Logo design and Branding',
+      feedback: 'Vadym did a great job with my project. He submitted all milestones ahead of schedule and was receptive to creative feedback. I am pleased with my finished logo and would hire Vadym again for future projects.',
+      presentation: {
+          top: "assets/projects/logo_instant-global-payments/top.jpg",
+          igp: "assets/projects/logo_instant-global-payments/igp.jpg",
+          laptop: "assets/projects/logo_instant-global-payments/laptop.jpg"
+      },
+      url: 'igp',
       avatar: 'assets/projects/logo_instant-global-payments/avatar.jpg'
   },
   {

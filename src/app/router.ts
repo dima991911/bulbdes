@@ -10,6 +10,7 @@ import { DrawMarketComponent } from './projects/draw-market/drawmarket.component
 import { AnextyComponent } from './projects/anexty/anexty.component';
 import { BeardStyleComponent } from './projects/beard-style/beard.style.component';
 import { SimGolfComponent } from './projects/sim-golf/sim.golf.component';
+import { IgpComponent } from './projects/igp/igp.component';
 
 export const router: Routes = [
     {
@@ -35,6 +36,10 @@ export const router: Routes = [
             {
                 path: 'sim-golf',
                 component: SimGolfComponent
+            },
+            {
+                path: 'igp',
+                component: IgpComponent
             }
         ]
     },

@@ -2,14 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\app\\navbar.mobile",
-    "\\src\\app\\projects",
-    "\\src\\app\\projects\\draw-market",
-    "\\src\\app\\service",
-    "\\src\\assets",
-    "\\src\\assets\\email"
+    "\\src\\app"
   ],
-  "SelectedNode": "\\src\\app\\navbar.mobile\\navbar.mobile.component.html",
+  "SelectedNode": "\\src\\app\\projects",
   "PreviewInSolutionExplorer": false
 }
