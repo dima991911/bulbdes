@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class EmailService {
-    api: string = 'http://bulbdes.com/assets/email';
+    api: string = 'http://skochko.net/assets/email';
 
     constructor(private http: Http) { }
 

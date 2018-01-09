@@ -115,10 +115,6 @@ a:hover {
   margin-right: 10px;
 }
 
-footer {
-  display: none;
-}
-
 @keyframes animationShow {
   0% {
     opacity: 0;

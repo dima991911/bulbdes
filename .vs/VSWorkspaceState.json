@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app"
+    "\\src\\app",
+    "\\src\\app\\projects",
+    "\\src\\app\\projects\\anexty",
+    "\\src\\app\\projects\\igp",
+    "\\src\\app\\projects\\sim-golf"
   ],
-  "SelectedNode": "\\src\\app\\projects",
+  "SelectedNode": "\\src\\app\\projects\\igp\\igp.component.css",
   "PreviewInSolutionExplorer": false
 }
