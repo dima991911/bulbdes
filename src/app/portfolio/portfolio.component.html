@@ -4,13 +4,13 @@
     <nav class="navigate_type">
       <a [routerLink]="['/portfolio', {type: 'logo'}]" [ngClass]="{router_active: type == 'logo' || !type}" (click)="checkUrl('logo')">Logo</a>
       <a [routerLink]="['/portfolio', {type: 'print'}]" [ngClass]="{router_active: type == 'print'}" (click)="checkUrl('print')">Print</a>
-      <a [routerLink]="['/portfolio', {type: 'web'}]" [ngClass]="{router_active: type == 'web'}" (click)="checkUrl('web')">Web</a>
+     <!-- <a [routerLink]="['/portfolio', {type: 'web'}]" [ngClass]="{router_active: type == 'web'}" (click)="checkUrl('web')">Web</a>-->
     </nav>
   </div>
 
   <div 
        *ngFor="let project of projects"
-       class="col-md-6 col-sm-6 col-xs-6 col-lg-4 project"
+       class="col-md-6 col-xs-6 col-lg-4 project"
        (click)="selectProject(project.url)">
     <img src="{{ project.avatar }}" class="project_img"/>
 

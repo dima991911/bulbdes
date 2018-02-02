@@ -14,43 +14,43 @@
     {
         id: 38,
         type: 'print',
-        name: "DMR",
+        name: "DMR 2",
         avatar: "assets/projects/print_dmr2/avatar.jpg"
     },
     {
         id: 38,
         type: 'print',
-        name: "DMR",
+        name: "Egoist",
         avatar: "assets/projects/print_egoist/avatar.jpg"
     },
     {
         id: 38,
         type: 'print',
-        name: "DMR",
+        name: "Main Event",
         avatar: "assets/projects/print_mainevent/avatar.jpg"
     },
     {
         id: 38,
         type: 'print',
-        name: "DMR",
+        name: "MDT",
         avatar: "assets/projects/print_mdt/avatar.jpg"
     },
     {
         id: 38,
         type: 'print',
-        name: "DMR",
+        name: "Med Flyer",
         avatar: "assets/projects/print_medflyer/avatar.jpg"
     },
     {
         id: 38,
         type: 'print',
-        name: "DMR",
+        name: "Menu Egoist",
         avatar: "assets/projects/print_menuegoist/avatar.jpg"
     },
     {
         id: 38,
         type: 'print',
-        name: "DMR",
+        name: "Tvaviation",
         avatar: "assets/projects/print_tvaviation/avatar.jpg"
     },
   {

@@ -8,7 +8,7 @@
 
 .brand {
   text-align: right;
-    padding: 0;
+  padding: 0;
 }
 
 .brand a:hover {
@@ -41,30 +41,6 @@
   transition: 1s;
   animation: showArrow 1s ease-out forwards;
 }
-  
-  @media screen and (max-width: 767px) {
-    .header {
-   margin-top: 75px;
- }
-
- .navbar {
-    display: none;
-  }
- .mobile_navbar {
-   display: block;
- }
-
- .logo {
-   width: 100px;
- }
-
- .brand {
-   position: fixed;
-   right: 40px;
-   top: -20px;
-   z-index: 100;
- }
-}
 
 @keyframes showArrow {
   0% {
@@ -78,7 +54,27 @@
 
 @media screen and (max-width: 480px) {
   .brand {
-    top: -20px;
-    right: 70px;
+      top: -20px;
+      right: 10px;
   }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        margin-top: 75px;
+    }
+
+    .navbar {
+        display: none;
+    }
+    .mobile_navbar {
+        display: block;
+    }
+
+    .brand {
+        position: fixed;
+        right: 80px;
+        top: -20px;
+        z-index: 100;
+    }
 }

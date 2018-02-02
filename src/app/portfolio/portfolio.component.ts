@@ -1,5 +1,5 @@
 ﻿import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, Params } from '@angular/router';
+import {Router, ActivatedRoute, Params, NavigationEnd, Event} from '@angular/router';
 
 import { projects } from '../projects';
 
@@ -18,7 +18,19 @@ export class PortfolioComponent implements OnInit {
 
     ngOnInit() {
         /*this.projects = projects;*/
-        this.checkUrl(null);
+
+        this.router.events.subscribe((path: Event) => {
+            if(path instanceof NavigationEnd) {
+                if(path.url == '/portfolio') {
+                    this.checkUrl(false);
+                } else {
+                    this.checkUrl(this.type);
+                }
+            }
+
+        });
+
+        this.checkUrl(false);
     }
 
     checkUrl(type) {
