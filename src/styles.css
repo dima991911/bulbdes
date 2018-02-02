@@ -5,6 +5,7 @@ body {
   background-attachment: fixed;
   font-family: Open Sans;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 input {
@@ -14,4 +15,8 @@ input {
 a:focus {
   text-decoration: none;
   outline: none;
+}
+
+a:hover {
+  text-decoration: none;
 }

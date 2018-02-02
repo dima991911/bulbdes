@@ -1,29 +1,77 @@
-﻿export const projects = [ 
-{
+﻿export const projects = [
+  {
       id: 38,
       type: 'logo',
       name: "Kaituki",
       avatar: "assets/projects/logo_kaituki/avatar.jpg"
   },
-{
+    {
+        id: 38,
+        type: 'print',
+        name: "DMR",
+        avatar: "assets/projects/print_dmr/avatar.jpg"
+    },
+    {
+        id: 38,
+        type: 'print',
+        name: "DMR",
+        avatar: "assets/projects/print_dmr2/avatar.jpg"
+    },
+    {
+        id: 38,
+        type: 'print',
+        name: "DMR",
+        avatar: "assets/projects/print_egoist/avatar.jpg"
+    },
+    {
+        id: 38,
+        type: 'print',
+        name: "DMR",
+        avatar: "assets/projects/print_mainevent/avatar.jpg"
+    },
+    {
+        id: 38,
+        type: 'print',
+        name: "DMR",
+        avatar: "assets/projects/print_mdt/avatar.jpg"
+    },
+    {
+        id: 38,
+        type: 'print',
+        name: "DMR",
+        avatar: "assets/projects/print_medflyer/avatar.jpg"
+    },
+    {
+        id: 38,
+        type: 'print',
+        name: "DMR",
+        avatar: "assets/projects/print_menuegoist/avatar.jpg"
+    },
+    {
+        id: 38,
+        type: 'print',
+        name: "DMR",
+        avatar: "assets/projects/print_tvaviation/avatar.jpg"
+    },
+  {
       id: 37,
       type: 'logo',
       name: "Marquis",
       avatar: "assets/projects/logo_marquis/avatar.jpg"
   },
-{
+  {
       id: 36,
       type: 'logo',
       name: "dmr",
       avatar: "assets/projects/logo_dmr/avatar.jpg"
   },
-{
+  {
       id: 35,
       type: 'logo',
       name: "Sakseide",
       avatar: "assets/projects/logo_sakseide/avatar.jpg"
   },
- {
+  {
       id: 34,
       type: 'logo',
       name: "Egoist",

@@ -26,7 +26,41 @@
 
 .project {
   margin-bottom: 25px;
+  padding: 0 10px;
   animation: myAnimation 0.5s ease-out forwards;
+}
+
+.navigate {
+  padding: 0 10px;
+  margin-bottom: 10px;
+  animation: myAnimation 0.5s ease-out forwards;
+}
+
+a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d2d2d2;
+  transition: 0.3s;
+}
+
+a:after {
+  content: '/';
+  font-size: 20px;
+  margin: 0 15px;
+  color: #d2d2d2;
+}
+
+a:last-child:after {
+  content: '';
+}
+
+a:hover {
+  color: #444;
+}
+
+.router_active {
+  font-weight: bold;
+  color: #444;
 }
 
 @keyframes myAnimation {

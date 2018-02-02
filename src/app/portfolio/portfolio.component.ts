@@ -1,6 +1,5 @@
 ﻿import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { Compiler } from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { projects } from '../projects';
 
@@ -12,19 +11,56 @@ import { projects } from '../projects';
 })
 
 export class PortfolioComponent implements OnInit {
-    projects: any;
+    projects: any[] = [];
+    type: string;
 
-    constructor(private router: Router, private compiler: Compiler) {}
+    constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
 
     ngOnInit() {
-        this.projects = projects;
-        this.compiler.clearCache;
+        /*this.projects = projects;*/
+        this.checkUrl(null);
     }
+
+    checkUrl(type) {
+
+        if( !type ) {
+            this.activatedRoute.params.forEach((params: Params) => {
+                this.type = params['type'];
+            });
+        } else {
+            this.type = type;
+        }
+
+        this.addProjects(this.type);
+    }
+
+    addProjects(type) {
+        this.projects = [];
+
+        if(!this.type) {
+            projects.forEach((elem) => {
+                if (elem.type == 'logo') {
+                    this.projects.push(elem);
+                }
+            });
+        }
+
+        projects.forEach((elem) => {
+            if (elem.type == type) {
+                this.projects.push(elem);
+            }
+        });
+    }
+
+    /*activeLink(type) {
+        let active = this.type == type;
+
+        return active;
+    }*/
 
     selectProject(id) {
         if (id) {
             this.router.navigate(['works', id]);
         }
-        
     }
 }
