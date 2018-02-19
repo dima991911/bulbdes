@@ -71,6 +71,16 @@
       name: "Sakseide",
       avatar: "assets/projects/logo_sakseide/avatar.jpg"
   },
+    {
+        type: 'logo',
+        name: "PIGEON Film",
+        avatar: "assets/projects/logo_pigeon-film/avatar.jpg"
+    },
+    {
+        type: 'logo',
+        name: "Shovels Up",
+        avatar: "assets/projects/logo_shovels-up/avatar.jpg"
+    },
   {
       id: 34,
       type: 'logo',
