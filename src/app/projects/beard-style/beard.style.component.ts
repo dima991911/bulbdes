@@ -13,7 +13,7 @@ export class BeardStyleComponent implements OnInit {
 
     ngOnInit() {
         projects.forEach((elem) => {
-            if (elem.id == 3) {
+            if (elem.id && elem.id == 3) {
                 this.project = elem
             }
         });

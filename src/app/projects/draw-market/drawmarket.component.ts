@@ -13,8 +13,8 @@ export class DrawMarketComponent implements OnInit {
 
     ngOnInit() {
         projects.forEach((elem) => {
-            if (elem.id == 1) {
-                this.project = elem; 
+            if (elem.id && elem.id == 1) {
+                this.project = elem;
             }
         });
     }

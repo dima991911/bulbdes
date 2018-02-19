@@ -72,11 +72,13 @@
       avatar: "assets/projects/logo_sakseide/avatar.jpg"
   },
     {
+        id: 55,
         type: 'logo',
         name: "PIGEON Film",
         avatar: "assets/projects/logo_pigeon-film/avatar.jpg"
     },
     {
+        id: 55,
         type: 'logo',
         name: "Shovels Up",
         avatar: "assets/projects/logo_shovels-up/avatar.jpg"

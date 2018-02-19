@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 
 import { projects } from '../../projects';
 
@@ -8,12 +8,12 @@ import { projects } from '../../projects';
   styleUrls: ['./anexty.component.css', '../project.css']
 })
 
-export class AnextyComponent {
+export class AnextyComponent implements OnInit{
     project: any;
 
     ngOnInit() {
         projects.forEach((elem) => {
-            if (elem.id == 2) {
+            if (elem.id && elem.id == 2) {
                 this.project = elem;
             }
         });

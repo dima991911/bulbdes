@@ -14,7 +14,7 @@ export class SimGolfComponent implements OnInit {
 
     ngOnInit() {
         projects.forEach((elem) => {
-            if (elem.id == 32) {
+            if (elem.id && elem.id == 32) {
                 this.project = elem;
             }
         });

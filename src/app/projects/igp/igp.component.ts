@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 
 import { projects } from '../../projects';
 
@@ -8,12 +8,12 @@ import { projects } from '../../projects';
     styleUrls: ['./igp.component.css', '../project.css']
 })
 
-export class IgpComponent {
+export class IgpComponent implements OnInit{
     project: any;
 
     ngOnInit() {
         projects.forEach((elem) => {
-            if (elem.id == 33) {
+            if (elem.id && elem.id == 33) {
                 this.project = elem;
             }
         });
