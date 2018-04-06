@@ -7,8 +7,9 @@
 }
 
 .brand {
+    padding-top: 25px;
   text-align: right;
-  padding: 0;
+    padding-right: 15px;
 }
 
 .brand a:hover {
@@ -16,13 +17,17 @@
 }
 
 .logo {
+    width:100%;
+}
+
+/*.logo {
     margin-top: 30px;
     margin-right: 0;
     padding: 0;
     width: 90%;
     text-decoration: none;
     color: #d4d4d4;
-}
+}*/
 
 .scrollTop {
   width: 20px;
@@ -55,7 +60,7 @@
 @media screen and (max-width: 480px) {
   .brand {
       top: -20px;
-      right: 10px;
+      right: 200px;
   }
 }
 
@@ -71,10 +76,14 @@
         display: block;
     }
 
+    .logo {
+        width: 100px;
+    }
+
     .brand {
         position: fixed;
-        right: 80px;
-        top: -20px;
+        right: 0;
+        top: -7px;
         z-index: 100;
     }
 }
