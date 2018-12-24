@@ -25,6 +25,7 @@ export class FooterComponent implements OnInit {
         var email = value.email;
 
         this.emailService.addEmail(email).subscribe(res => {
+            console.log(res);
             this.emailForm.reset();
         });
     }

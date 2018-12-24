@@ -103,7 +103,7 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: #DF4142;
   cursor: pointer;
   transition: 0.5s;
   text-decoration: none;

@@ -10,18 +10,15 @@ export class EmailService {
     constructor(private http: Http) { }
 
     addMsg(value) {
-        var headers = new Headers();
-        headers.append('Content-Type', 'application/json');
-        headers.append('Accept', 'text/html');
+        console.log(value);
+        let msg = `Name: ${value.name}\n Email:${value.email} Message:\n${value.msg}`;
+        let api = 'https://api.telegram.org/bot759889432:AAF_FaU2r_B0DmrHOqGxknFQxti2xh8r-Ec/sendMessage?chat_id=525098249&text=' + msg;
 
-        return this.http.post(this.api + '/message.php', JSON.stringify(value), { headers: headers }).map(res => res.text());
+        return this.http.get(api, JSON.stringify(value)).map(res => res.text());
     }
 
     addEmail(val) {
-        var headers = new Headers();
-        headers.append('Content-Type', 'text/html');
-        headers.append('Accept', 'text/html');
-
-        return this.http.post(this.api + '/email.php', val, { headers: headers }).map(res => res.text());
+        let api = 'https://api.telegram.org/bot759889432:AAF_FaU2r_B0DmrHOqGxknFQxti2xh8r-Ec/sendMessage?chat_id=525098249&text=' + val;
+        return this.http.get(api).map(res => res.text());
     }
 }
