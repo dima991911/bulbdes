@@ -1,12 +1,12 @@
 ﻿<div class="row wrapper">
 
-  <div class="col-xs-12 navigate">
+  <!--<div class="col-xs-12 navigate">
     <nav class="navigate_type">
       <a [routerLink]="['/portfolio', {type: 'logo'}]" [ngClass]="{router_active: type == 'logo' || !type}" (click)="checkUrl('logo')">Logo</a>
       <a [routerLink]="['/portfolio', {type: 'print'}]" [ngClass]="{router_active: type == 'print'}" (click)="checkUrl('print')">Print</a>
-     <!-- <a [routerLink]="['/portfolio', {type: 'web'}]" [ngClass]="{router_active: type == 'web'}" (click)="checkUrl('web')">Web</a>-->
+     &lt;!&ndash; <a [routerLink]="['/portfolio', {type: 'web'}]" [ngClass]="{router_active: type == 'web'}" (click)="checkUrl('web')">Web</a>&ndash;&gt;
     </nav>
-  </div>
+  </div>-->
 
   <div 
        *ngFor="let project of projects; let i = index"

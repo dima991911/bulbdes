@@ -11,13 +11,13 @@
 }
 
   a:hover {
-    color: #444;
+    color: #DF4142;
     text-decoration: none;
     transition: 0.2s;
   }
 
 .router_active {
-  color: #444;
+  color: #DF4142;
   text-decoration: none;
 }
 

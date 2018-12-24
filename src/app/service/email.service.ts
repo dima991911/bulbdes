@@ -11,8 +11,8 @@ export class EmailService {
 
     addMsg(value) {
         console.log(value);
-        let msg = `Name: ${value.name}\n Email:${value.email} Message:\n${value.msg}`;
-        let api = 'https://api.telegram.org/bot759889432:AAF_FaU2r_B0DmrHOqGxknFQxti2xh8r-Ec/sendMessage?chat_id=525098249&text=' + msg;
+        let msg = `Name: ${value.name}, Email: ${value.email}, Message: ${value.msg}`;
+        let api = `https://api.telegram.org/bot759889432:AAF_FaU2r_B0DmrHOqGxknFQxti2xh8r-Ec/sendMessage?chat_id=525098249&text=${msg}`;
 
         return this.http.get(api, JSON.stringify(value)).map(res => res.text());
     }
