@@ -7,51 +7,63 @@
 
       <div class="col-lg-12 onePreference">
         <h4 (click)="changeBrief()">Step 1 {{ brief ? '-' : '+' }}</h4>
-        <div class="onePreferenceParagraph" *ngIf="brief">
-          <h5>LOGO DETAIL BRIEF</h5>
-          <p>Fill out this <a href="https://goo.gl/forms/6cAC24T97AhGyizP2" target="_blank">logo detail form</a> please. It helps us to understand your activity and your needs. Based on your responses we will create a list of objectives that need to be met by the logo design.</p>
+        <div class="onePreferenceParagraph">
+            <div @showStep *ngIf="brief">
+                <h5>LOGO DETAIL BRIEF</h5>
+                <p>Fill out this <a href="https://goo.gl/forms/6cAC24T97AhGyizP2" target="_blank">logo detail form</a> please. It helps us to understand your activity and your needs. Based on your responses we will create a list of objectives that need to be met by the logo design.</p>
+            </div>
         </div>
       </div>
 
       <div class="col-lg-12 onePreference">
         <h4 (click)="changeResearch()">Step 2 {{ research ? '-' : '+' }}</h4>
-        <div class="onePreferenceParagraph" *ngIf="research">
-          <h5>PAYMENT 50%</h5>
-          <p>You can pay 50% using <a href="https://www.paypal.me/bulbdes">PayPal</a> or you can hire us on <a href="https://www.freelancer.com/hireme/skochkovadym" target="_blank" class="work">Freelancer.com</a> or <a href="https://www.upwork.com/o/profiles/users/_~015adac7bb62ef58a2/" target="_blank" class="work">Upwork</a>. After that we start working on next step.</p>
+        <div class="onePreferenceParagraph">
+            <div @showStep *ngIf="research">
+                <h5>PAYMENT 50%</h5>
+                <p>You can pay 50% using <a href="https://www.paypal.me/bulbdes">PayPal</a> or you can hire us on <a href="https://www.freelancer.com/hireme/skochkovadym" target="_blank" class="work">Freelancer.com</a> or <a href="https://www.upwork.com/o/profiles/users/_~015adac7bb62ef58a2/" target="_blank" class="work">Upwork</a>. After that we start working on next step.</p>
+            </div>
         </div>
       </div>
 
       <div class="col-lg-12 onePreference">
         <h4 (click)="changeDesign()">Step 3 {{ design ? '-' : '+' }}</h4>
-        <div class="onePreferenceParagraph" *ngIf="design">
-          <h5>RESEARCH & DEVELOP</h5>
-          <p>We need some time to research your activity and generate our ideas on paper. Researching is very important part of any design process. We will study your activity and your competitors. Only after good researching we can design a logo that represents the uniqueness of the business or product.
-</p>
+        <div class="onePreferenceParagraph">
+            <div @showStep *ngIf="design">
+                <h5>RESEARCH & DEVELOP</h5>
+                <p>We need some time to research your activity and generate our ideas on paper. Researching is very important part of any design process. We will study your activity and your competitors. Only after good researching we can design a logo that represents the uniqueness of the business or product.
+                </p>
+            </div>
         </div>
       </div>
 
       <div class="col-lg-12 onePreference">
         <h4 (click)="changePresentation()">Step 4 {{ presentation ? '-' : '+' }}</h4>
-        <div class="onePreferenceParagraph" *ngIf="presentation">
-          <h5>PRESENTATION & EDIT</h5>
-          <p>When we ready to present several concepts, we will send you document which display the logo designs created with explain our decisions. For concept that you'll like, you have unlimited revisions until you will satisfy your needs.</p>
+        <div class="onePreferenceParagraph">
+            <div @showStep *ngIf="presentation">
+                <h5>PRESENTATION & EDIT</h5>
+                <p>When we ready to present several concepts, we will send you document which display the logo designs created with explain our decisions. For concept that you'll like, you have unlimited revisions until you will satisfy your needs.</p>
+            </div>
         </div>
       </div>
 
       <div class="col-lg-12 onePreference">
         <h4 (click)="changeDelivery()">Step 5 {{ delivery ? '-' : '+' }}</h4>
-        <div class="onePreferenceParagraph" *ngIf="delivery">
-          <h5>PAYMENT & DELIVERY</h5>
-          <p>Once you are happy with the final design logo, you can pay last 50%, we will prepare files for use on web and print. I will also prepare a document with all logo configuration and file with vector format.
-</p>
+        <div class="onePreferenceParagraph">
+            <div @showStep *ngIf="delivery">
+                <h5>PAYMENT & DELIVERY</h5>
+                <p>Once you are happy with the final design logo, you can pay last 50%, we will prepare files for use on web and print. I will also prepare a document with all logo configuration and file with vector format.
+                </p>
+            </div>
         </div>
       </div>
 
       <div class="col-lg-12 onePreference">
         <h4 (click)="changeSupport()">Step 6 {{ support ? '-' : '+' }}</h4>
-        <div class="onePreferenceParagraph" *ngIf="support">
-          <h5>SUPPORT</h5>
-          <p>We provide any technical support after the completion of the project.</p>
+        <div class="onePreferenceParagraph">
+            <div @showStep *ngIf="support">
+                <h5>SUPPORT</h5>
+                <p>We provide any technical support after the completion of the project.</p>
+            </div>
         </div>
       </div>
 

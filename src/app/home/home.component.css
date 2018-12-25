@@ -24,6 +24,7 @@ h3 {
 }
 
 h4 {
+  overflow: hidden;
   text-align: left;
   font-size: 26px;
   color: #d4d4d4;
@@ -71,24 +72,16 @@ p {
 }
 
 .onePreference {
+  overflow: hidden;
   margin-bottom: 10px;
   border-left: 1px solid #d4d4d4;
   color: #d4d4d4;
 }
 
 .onePreferenceParagraph {
-  animation: onePreferenceP 0.3s ease-out forwards;
+  position: relative;
+  overflow: hidden;
   text-align: left;
-}
-
-@keyframes onePreferenceP {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes animationShow {

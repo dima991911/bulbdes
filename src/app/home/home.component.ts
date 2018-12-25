@@ -1,10 +1,29 @@
 ﻿import { Component } from '@angular/core';
 
+import {
+    trigger,
+    state,
+    style,
+    animate,
+    transition
+} from '@angular/animations';
+
 @Component({
     moduleId: module.id,
     selector: 'home',
     templateUrl: 'home.component.html',
-    styleUrls: ['home.component.css']
+    styleUrls: ['home.component.css'],
+    animations: [
+        trigger('showStep', [
+            transition(':enter', [
+                style({marginTop: '-150px'}),
+                animate('0.3s ease-out', style({marginTop: '0'}))
+            ]),
+            transition(':leave', [
+                animate('0.3s ease-in', style({marginTop: '-150px'}))
+            ])
+        ])
+    ]
 })
 
 export class HomeComponent {
