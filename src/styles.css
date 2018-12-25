@@ -1,7 +1,9 @@
 ﻿/* You can add global styles to this file, and also import other style files */
 
 body {
-  background: url(assets/bg.png);
+  background: linear-gradient(to right, #200122, #6f0000);  /*linear-gradient(to right, #c33764, #1d2671);*/
+  /*background: linear-gradient(to right, #c33764, #1d2671);*/
+
   background-attachment: fixed;
   font-family: Open Sans;
   min-width: 320px;

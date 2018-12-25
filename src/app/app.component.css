@@ -47,6 +47,21 @@
   animation: showArrow 1s ease-out forwards;
 }
 
+.success {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    padding: 10px 20px;
+    width: 350px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.95);
+    color: #d4d4d4;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px -2px 5px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px -2px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: 2px -2px 5px 1px rgba(0,0,0,0.3);
+}
+
 @keyframes showArrow {
   0% {
     opacity: 0;
