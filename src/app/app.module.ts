@@ -26,6 +26,7 @@ import { SimGolfComponent } from './projects/sim-golf/sim.golf.component';
 import { IgpComponent } from './projects/igp/igp.component';
 
 import { EmailService } from './service/email.service';
+import { SuccessService } from './service/success.service';
 
 @NgModule({
     declarations: [
@@ -54,7 +55,8 @@ import { EmailService } from './service/email.service';
         BrowserAnimationsModule
   ],
     providers: [
-        EmailService
+        EmailService,
+        SuccessService
     ],
   bootstrap: [AppComponent]
 })

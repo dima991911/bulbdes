@@ -9,18 +9,21 @@
                type="text"
                placeholder="Your name"/>
 
-        <label>Email *</label>
+        <label>Email *
+            <span class="error"
+                  @showError
+                  *ngIf="loginForm.get('email').hasError('email') &&
+                  loginForm.get('email').touched">
+
+                Incorrect email
+            </span>
+        </label>
         <input 
                formControlName="email"
                type="email"
                autocomplete="off"
                placeholder="Your email"
                name="email"/>
-
-        <p 
-           class="error"
-           *ngIf="loginForm.get('email').hasError('email') &&
-                  loginForm.get('email').touched">Incorrect email</p>
 
         <label>Subject</label>
 
@@ -29,7 +32,17 @@
                type="text"
                placeholder="Subject"/>
 
-        <label>Message *</label>
+        <label>
+            Message *
+
+            <span class="error"
+                  @showError
+                  *ngIf="loginForm.get('msg').hasError('required') &&
+                  loginForm.get('msg').touched">
+
+                Message is empty
+            </span>
+        </label>
 
         <textarea
                formControlName="msg"
@@ -37,14 +50,8 @@
                class="msg"
                type="text"></textarea>
 
-        <p 
-           class="error"
-           *ngIf="loginForm.get('msg').hasError('required') &&
-                  loginForm.get('msg').touched">Message is empty</p>
-
         <button type="submit" class="sub" [disabled]="loginForm.invalid">Submit</button>
 
-        <p class="thank" *ngIf="msgThank">Thanks for you message</p>
       </form>
     </div>
 

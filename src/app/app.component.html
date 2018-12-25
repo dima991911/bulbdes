@@ -21,3 +21,9 @@
   </div>
 </div>
 <footer></footer>
+<div @showSuccess
+     class="success"
+     *ngIf="successService.showMessage">
+
+  Thank you for your message!
+</div>
